@@ -1,96 +1,39 @@
 body {
-  font-family: Arial, sans-serif;;
-  background-color: #E17A13; 
+  font-family: Arial, sans-serif;
+  background-color: #E17A13;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.login-form {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
+  justify-content: flex-end; 
+  align-items: stretch;
+  height: 100vh; 
+  overflow-x: hidden; 
 }
 
-.login-form__title {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.login-form__label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #333;
-  text-align: left;
-}
-
-.login-form__input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-}
-
-.login-form__input:focus {
-  border-color: #0D448C;
-  outline: none;
-}
-
-.login-form__button {
-  background-color: #0D448C; 
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-.login-form__button:hover {
-  background-color: #093a6b; 
-}
-
-.login-form__text {
-  font-size: 14px;
-  color: #333;
-  margin-top: 10px;
-}
-
-.login-form__link {
-  color: #0D448C;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
+.login-form,
 .signin-form {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 400px; 
   text-align: center;
+  height: 100vh; 
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 
+.login-form__title,
 .signin-form__title {
   color: #333;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
+.login-form__label,
 .signin-form__label {
   display: block;
   font-size: 16px;
@@ -99,6 +42,7 @@ body {
   text-align: left;
 }
 
+.login-form__input,
 .signin-form__input {
   width: 100%;
   padding: 10px;
@@ -109,13 +53,15 @@ body {
   box-sizing: border-box;
 }
 
+.login-form__input:focus,
 .signin-form__input:focus {
   border-color: #0D448C;
   outline: none;
 }
 
+.login-form__button,
 .signin-form__button {
-  background-color: #0D448C; 
+  background-color: #0D448C;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -126,19 +72,21 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.login-form__button:hover,
 .signin-form__button:hover {
-  background-color: #093a6b; 
+  background-color: #093a6b;
 }
 
-/* volver log*/
+.login-form__text,
 .signin-form__text {
   font-size: 14px;
   color: #333;
   margin-top: 10px;
 }
 
+.login-form__link,
 .signin-form__link {
-  color: #0D448C; 
+  color: #0D448C;
   cursor: pointer;
   text-decoration: underline;
 }
