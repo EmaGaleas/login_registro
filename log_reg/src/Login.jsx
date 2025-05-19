@@ -1,7 +1,7 @@
 function Login({ onSwitchToSignin }) {
   return (
     <div className="login-form">
-      <h2 className="login-form__title">Iniciar Sesión</h2>
+      <h2 className="login-form__title">¡Bienvenido!</h2>
 
       <label className="login-form__label">
         ID:
